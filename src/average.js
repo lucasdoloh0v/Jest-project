@@ -11,10 +11,27 @@
     - average([1, 1]) // Retorno: 1;
     - average([1, '2']) // Retorno: undefined;
 */
+const veryfyNumericArray = (arrayToVerify) => {
+  for (let i = 0; i < arrayToVerify.length; i += 1) {
+    if (typeof arrayToVerify[i] !== 'number') {
+      return false;
+    }
+  }
+  return true;
+};
 
-const average = () => {
+const average = (array) => {
   // add your implementation here
+  if (array.length === 0 || veryfyNumericArray(array) === false) {
+    return undefined;
+  }
 
+  let sum = 0;
+
+  for (let i = 0; i < array.length; i += 1) {
+    sum += array[i];
+  }
+  return Math.round(sum / array.length);
 };
 
 module.exports = average;
