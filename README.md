@@ -7,13 +7,12 @@ Este projeto tem como foco fazer a corbertura de testes de arquivos já implemen
 
 ## Técnologias usadas
 
--JavaScript.
--Jest.
+JavaScript Jest
 
 ## Instalando as Dependências
 
 ```
-cd / 
+cd Jest-project/ 
 npm install
 ```
 
